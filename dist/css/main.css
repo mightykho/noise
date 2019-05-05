@@ -1,0 +1,227 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #343434;
+}
+
+input {
+  font-size: 100%;
+}
+
+.container {
+  padding: 60px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+}
+
+canvas {
+  display: block;
+}
+
+.canvas--1d {
+  border-left: 2px solid #333;
+  border-bottom: 2px solid #333;
+  margin-left: -2px;
+  margin-bottom: 40px;
+}
+
+.grid h2 {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.grid > div, .grid > section {
+  padding: 0 20px;
+}
+
+b {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+h3 {
+  color: #666;
+  font-size: 28px;
+  margin-bottom: 60px;
+}
+
+p {
+  color: #666;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.interactive-panel {
+  margin-left: 40px;
+}
+
+.interactive-panel div {
+  margin-bottom: 20px;
+}
+
+.interactive-panel label {
+  text-transform: capitalize;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.interactive-panel--color {
+  width: 280px;
+}
+
+.interactive-panel--color label {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  margin-right: 5px;
+  float: left;
+  margin-top: -5px;
+  color: transparent;
+}
+
+.interactive-panel--color > div:last-child > input {
+  display: none;
+}
+
+.interactive-panel--color > div:last-child > span {
+  display: none;
+}
+
+.colors span.color {
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  top: -5px;
+}
+
+.colors h3 {
+  width: 300px;
+  position: relative;
+}
+
+.mesh-example {
+  position: relative;
+  outline: 3px solid #666;
+  width: 350px;
+  height: 350px;
+  margin-top: 150px;
+  margin-bottom: 60px;
+}
+.mesh-example span {
+  position: absolute;
+  font-size: 30px;
+}
+
+.mesh-example .p0 {
+  left: -10%; top: -10%;
+}
+
+.mesh-example .p1 {
+  right: -10%; top: -10%;
+}
+
+.mesh-example .p2 {
+  left: -10%; bottom: -10%;
+}
+
+.mesh-example .p3 {
+  right: -10%; bottom: -10%;
+}
+
+.mesh-example::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 142%;
+  height: 142%;
+  border-top: 3px solid #aaa;
+  transform-origin: 0 0;
+  transform: rotate(45deg);
+}
+
+#scene {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#clouds {
+  position: absolute;
+  z-index: 200;
+}
+#texture {
+  display: none;
+}
+
+#info_panel {
+  position: absolute;
+  z-index: 200;
+}

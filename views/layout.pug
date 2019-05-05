@@ -1,0 +1,11 @@
+html
+  head
+    title Let's make some noise
+    link(type='text/css' rel='stylesheet' href='/css/main.css')
+  body(data-page=pageId)
+    .container
+      block content
+
+    script(src="/js/app.js")
+    script(src="/js/page_" + pageId + ".js")
+    block scripts
