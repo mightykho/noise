@@ -11,7 +11,7 @@
     "webpack-cli": "^3.3.2"
   },
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "noisejs": "^2.1.0",
     "pug": "^2.0.3",
     "three": "^0.104.0"
